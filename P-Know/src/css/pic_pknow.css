@@ -1,0 +1,611 @@
+*{
+    font-family: 'Poppins';
+}
+
+:root {
+    --primary-color:rgba(10, 94, 168, 1);
+    --secondary-color: rgba(8, 84, 159, 1);
+    --black-color: #0000;
+}
+
+nav{
+    margin-left: -10px;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5%;
+   background-color: white;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   box-shadow: 0px 8px 4px rgba(77, 77, 77, 0.397) ;
+}   
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 47px;
+}
+
+nav ul li a{
+    font-family: 'Poppins Semibold';
+    text-decoration: none;
+    align-items: center;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav ul li .dropdown-content li {
+    list-style: none;
+    margin: 0;
+    padding: 12px 16px;
+}
+
+nav ul li .dropdown-content li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li .dropdown-content li:hover {
+    background-color: rgba(10, 94, 168, 0.1);
+    font-weight: bold;
+}
+
+nav ul li.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+table tr td{
+    margin: 0;
+}
+
+.pengguna{
+    margin-right: 10px;
+    text-align: right;
+}
+
+.pengguna p, h4{
+    font-family: 'Poppins Semibold';
+}
+
+.pengguna h4{
+    color: #5A8DBA;
+}
+
+.profile{
+    margin-right: 150px;
+}
+
+.pengguna h3, h4, p{
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.profile{
+display: flex;
+}
+
+.logo {
+margin-left: 20px;
+}
+
+.dropdown {
+    padding-bottom: 2px;
+}
+
+/* Section 1 */
+
+.sec1 {
+    background-image: url(../assets/bgBeranda.png);
+    display: flex;
+    width: 100%;
+    padding-right: 80px;
+    height: 100vh;
+    margin-left: -8px;
+    background-size: cover;
+    background-color: var(--primary-color);
+}
+
+.secLogin {
+    background-image: url(../assets/backgroundLogin.png);
+    width: 1313px;
+    height: 600px;
+    margin-left: -50px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-color: var(--primary-color);
+}
+
+
+
+.ucapan {
+    padding-top: 130px;
+    width: 35%;
+    padding-left: 100px;
+}
+
+.ucapan h3 {
+    color: #FFF;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.ucapan h1 {
+    color: #FFF;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 70px;
+    width: 600px;
+}
+
+.ucapan p {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    margin-bottom: 10px;
+    width: 600px;
+}
+
+.ucapan button {
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    width: 280px;
+    height: 60px;
+    border-radius: 35px;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ucapan button:hover{
+    background-color: var(--primary-color);
+    color: white;
+    transition-duration: 1.5s;
+    transform: translateY(20);
+    z-index: inherit;
+}
+
+.imgDatang {
+    padding-top: 246px;
+    display: flex;
+    width: 30%;
+    margin-left: 100px;
+
+}
+
+.ceweVR, .cowoTop {
+    width: 100%;
+    margin-right: -50px;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+}
+
+/* footer */
+footer {
+    background-color: #ffffff;
+    padding: 60px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 60px;
+}
+
+.footer-section img {
+    margin-left: 35px;
+}
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-section p, 
+.footer-section ul, 
+.footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section p {
+    color: black;
+    text-align: justify;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section .prodi ul li a {
+    height: 50px;
+    text-align: justify;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #aeaeae;
+    text-align: justify;
+}
+
+.footer-section ul li a:hover {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.footer-bottom p{
+    color: black;
+    font-weight: 600;
+}
+
+.pknow {
+    margin-bottom: 20px;
+}
+
+/* Center the form container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the form box */
+.login-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 412px;
+
+}
+
+/* Style the title */
+.login-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3366ff;
+    margin-bottom: 20px;
+}
+
+/* Style the input fields */
+.login-input {
+    width: 92%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Style the submit button */
+.login-button {
+    width: 98%;
+    padding: 10px;
+    background-color: #3366ff;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* Add some hover effect to the button */
+.login-button:hover {
+    background-color: #2851a3;
+}
+
+
+/* Header Search */
+.header-search {
+    background-image: url(../assets/backgroundSearch.png);
+    top: 0;
+    height: 50px;
+    width: 1405px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-color: var(--primary-color);
+    padding-top: 300px;
+}
+
+.kelola-text{
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    margin-top: -200px;
+}
+
+.kelola-desk {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.kelompok-keahlian  {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.title-kk {
+    font-family: 'Poppins SemiBold';
+    font-size: 17px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.buttonadd_filter button{
+    margin-right: 15px;
+    margin-top: 15px;
+} 
+
+.buttonadd_filter .Filter {
+    border: 1px rgb(164, 164, 164) solid;
+    background-color: transparent;
+}
+
+.Filter img {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    margin-bottom: -2px;
+}
+
+.buttonadd_filter .Tambah {
+    border: none;
+    color: white;
+    background: var(--Button, #0E6EFE);
+}
+
+.left-feature{
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.status{
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.status tr td p{
+    font-family: 'Poppins SemiBold';
+    color : black;
+}
+
+
+/* Daftar Kelompok Keahlian */
+.daftar-kelompok-keahlian {
+    display: flex;
+}
+.bg-white-kk {
+    margin-left: 60px ;
+    border-radius: 14px;
+    border: 1px solid #DFDFDF;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(10, 95, 168, 0.20);
+    width: 380px;
+    height: 470px;
+    margin-top: 20px;
+}
+
+.bg-white-kk .cover-daftar-kk {
+    width: 380px;
+    object-fit: cover;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.bg-white-kk  h3{
+    color: var(--ASTRAtech, #0A5EA8);
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.bg-white-kk p {
+    color: black;
+    margin: 0px 20px;
+    margin-bottom: 12px;
+}
+
+.bg-white-kk .deskripsi {
+    color: rgb(128, 128, 128);
+    text-align: justify;
+}
+
+.status-open{
+    justify-content: space-between;
+    display: flex;
+    margin: 0px 20px;
+}
+
+.pemilik{
+    margin-left: 20px;
+}
+
+.pemilik p {
+    font-size: 16px;
+    font-family: 'Poppins SemiBold';
+}
+
+.prodi, .userProdi {
+    display: flex;
+}
+
+
+/* Media query untuk layar tablet (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .profile {
+        margin-right: 30px;
+    }
+
+    nav ul li {
+        margin-right: 30px;
+    }
+
+    .sec1 {
+        flex-direction: column;
+        padding-right: 40px;
+    }
+
+    .ucapan {
+        padding-left: 50px;
+        width: 80%;
+    }
+
+    .imgDatang {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Media query untuk layar ponsel besar (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .ucapan {
+        padding-left: 20px;
+        padding-top: 100px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .ucapan h1 {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+
+    .ucapan p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .ucapan button {
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .imgDatang {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .ceweVR, .cowoTop {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Media query untuk layar ponsel kecil (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .profile {
+        display: none; /* Hide profile for small screens */
+    }
+
+    .ucapan h1 {
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+
+    .ucapan p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .ucapan button {
+        width: 220px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .imgDatang {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .ceweVR, .cowoTop {
+        width: 90%;
+    }
+
+    footer .footer-section {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    footer .footer-section ul {
+        text-align: center;
+    }
+}

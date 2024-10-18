@@ -1,0 +1,35 @@
+.search {
+    display: flex;
+    justify-content: center;
+    margin-left: -50px;
+}
+.search-box {
+    position: relative;
+    width: 520px; /* Adjust the width as needed */
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 20px; /* Add padding for the icon */
+    border-radius: 15px;
+    border: none;
+    font-size: 14px;
+    height: 25px;
+  }
+  
+  .search-input:focus-visible {
+    border: none; /* Menghilangkan border ketika fokus */
+    box-shadow: none; /* Menghilangkan efek bayangan default */
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 0px;
+    margin-right: -40px; /* Position the icon inside the box */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+  }
+  
