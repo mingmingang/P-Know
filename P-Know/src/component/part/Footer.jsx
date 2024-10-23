@@ -1,14 +1,15 @@
 import React from 'react';
 import logo from '../../assets/logoAstratech.png';
-import "../../css/pic_pknow.css"; // Pastikan path logo sesuai
+import "../../css/Footer.css"; // Pastikan path logo sesuai
 
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-section">
-        <img src={logo} alt="ASTRAtech" width="150" />
-      </div>
       <div className="footer-container">
+      <div className="footer-section">
+        <img src={logo} alt="ASTRAtech"  width="150" />
+      </div>
+      <div className="footer-detail">
         <div className="footer-section">
           <h3>Alamat</h3>
           <p>
@@ -50,6 +51,7 @@ const Footer = () => {
             <li><a href="#">Teknologi Rekayasa Perangkat Lunak</a></li>
           </ul>
         </div>
+      </div>
       </div>
       <div className="footer-bottom">
         <p>Copyright © 2024 - MIS ASTRAtech</p>

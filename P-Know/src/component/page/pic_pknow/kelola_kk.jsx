@@ -15,6 +15,10 @@ import wait_pic from '../../../assets/wait-pic.png';
 import filtericon from '../../../assets/filtericon.png';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons'; 
+import developer from '../../../assets/developer.png';
+import automotive from '../../../assets/automotiveKK.png';
+import DaftarKelompokKeahlian from '../../part/DaftarKelompokKeahlian';
+
 
 const KelolaKK = () => {
   return (
@@ -45,7 +49,7 @@ const KelolaKK = () => {
                     <div className="profile">
                         <div className="pengguna">
                             <h3>Budi Hartono</h3>
-                            <h4>PIC KMS</h4>
+                            <h4>PIC P-KNOW</h4>
                             <p>Terakhir Masuk : 5 Maret 2024, 10.38 WIB</p>
                         </div>
                         <div className="fotoprofil">
@@ -57,8 +61,9 @@ const KelolaKK = () => {
                 <div className="header-search">
                     <h1 className='kelola-text'>Kelola Kelompok Keahlian</h1>
                     <p className='kelola-desk'>ASTRAtech memiliki banyak program studi, di dalam program studi terdapat <br /> kelompok keahlian yang biasa disebut dengan Kelompok Keahlian</p>
-                    <SearchBox />
+                   <SearchBox />
                 </div>
+                
                 <div className="kelompok-keahlian">
                         <p className='title-kk'>Kelompok Keahlian</p>
                         <div className="left-feature">
@@ -83,7 +88,7 @@ const KelolaKK = () => {
 
                     <div className="daftar-kelompok-keahlian">
                         <div class="bg-white-kk">
-                        <img alt="Android Developer image"className='cover-daftar-kk' height="200" src="https://storage.googleapis.com/a1aa/image/9pX5u1jAxvKwBRmFzwijCnbEExNMvrVlQ9Ro9AxNpXEuLezJA.jpg" width="300"/>
+                        <img alt="Android Developer image"className='cover-daftar-kk' height="200" src={developer} width="300"/>
                         <h3 class="mt-4 text-xl font-bold text-blue-600">
                         Android Developer
                         </h3>
@@ -119,7 +124,7 @@ const KelolaKK = () => {
                     </div>
 
                     <div class="bg-white-kk">
-                        <img alt="Android Developer image"className='cover-daftar-kk' height="200" src="https://storage.googleapis.com/a1aa/image/9pX5u1jAxvKwBRmFzwijCnbEExNMvrVlQ9Ro9AxNpXEuLezJA.jpg" width="300"/>
+                        <img alt="Android Developer image"className='cover-daftar-kk' height="200" src={automotive} width="300"/>
                         <h3 class="mt-4 text-xl font-bold text-blue-600">
                         Android Developer
                         </h3>
@@ -191,8 +196,9 @@ const KelolaKK = () => {
                     </div>
                     
                 </div>
-
+                
             <Footer/>
+           
             </div>
   );
 };
