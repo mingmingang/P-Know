@@ -126,13 +126,13 @@ const KelolaKK = () => {
                     <div class="bg-white-kk">
                         <img alt="Android Developer image"className='cover-daftar-kk' height="200" src={automotive} width="300"/>
                         <h3 class="mt-4 text-xl font-bold text-blue-600">
-                        Android Developer
+                       Otomotive 
                         </h3>
                         <div className="pemilik">
                             <div className="prodi">
                                 <FontAwesomeIcon icon={faGraduationCap} />
                                 <p class="text-gray-700">
-                                    Informatics Management
+                                    Machine Otomotive
                                     </p>
                                     </div>
                                     <div className="userProdi">

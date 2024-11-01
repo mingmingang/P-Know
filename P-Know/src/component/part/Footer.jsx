@@ -28,7 +28,7 @@ const Footer = () => {
           <p>+62 878 7177 6117 (WhatsApp)</p>
           <p>sekretariat@polytechnic.astra.ac.id</p>
         </div>
-        <div className="footer-section">
+        <div className="footer-section hide-on-mobile">
           <h3>ASTRAtech</h3>
           <ul>
             <li><a href="#">Career</a></li>
@@ -37,7 +37,7 @@ const Footer = () => {
             <li><a href="#">Blog</a></li>
           </ul>
         </div>
-        <div className="footer-section">
+        <div className="footer-section hide-on-mobile">
           <h3>Program Studi</h3>
           <ul>
             <li><a href="#">Pembuatan Peralatan dan Perkakas Produksi</a></li>

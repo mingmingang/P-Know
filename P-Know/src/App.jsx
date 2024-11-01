@@ -4,11 +4,12 @@ import PIC_PKNOW from "./component/page/pic_pknow/index";
 import KelolaKK from "./component/page/pic_pknow/kelola_kk";
 import TambahKK from "./component/page/pic_pknow/crud/TambahKK";
 import KelolaAnggota from "./component/page/pic_pknow/kelola_anggota"
+import DaftarKelompokKeahlian from "./component/part/DaftarKelompokKeahlian";
 
 function App() {
     return (
         <div className="App">
-         <Login />
+         <KelolaAnggota />
         </div>
     );
 }

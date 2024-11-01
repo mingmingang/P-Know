@@ -1,15 +1,12 @@
+/* Base Footer Styles */
 footer {
     background-color: #ffffff;
     padding: 40px 0;
     font-family: Arial, sans-serif;
     color: #333;
-    width: 100%;
+    width: 110%;
     box-shadow: 0px -8px 8px rgba(77, 77, 77, 0.397);
-}
-
-.footer-section img {
-    display: flex;
-    margin-left: -5px;
+    margin-top: 20px;
 }
 
 .footer-container {
@@ -18,29 +15,18 @@ footer {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer-detail {
-    display: flex;
+    padding: 0 5%;
 }
 
 .footer-section {
     flex: 1;
-    margin: 20px;
+    margin: 1em;
     min-width: 250px;
-}
-
-.footer-logo {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    max-width: 100%;
 }
 
 .footer-logo img {
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -54,6 +40,11 @@ footer {
 .footer-section ul, 
 .footer-section li {
     margin: 5px 0;
+    color: black;
+}
+
+.footer-detail {
+    display: flex;
 }
 
 .footer-section ul {
@@ -87,17 +78,86 @@ footer {
     font-weight: 600;
 }
 
-/* Responsive Design */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 1em;
+    min-width: 250px;
+    max-width: 100%;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design for Tablets and Small Screens */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 0 2em;
     }
 
     .footer-section {
-        margin: 10px 0;
-        width: 100%;
-        text-align: center;
+        margin: 1em 0;
+        flex-basis: 100%;
     }
+
+    .footer-logo img {
+        max-width: 80%;
+    }
+}
+
+/* iPhone and Small Mobile Screens */
+@media (max-width: 480px) {
+    footer {
+        padding: 20px 0;
+        text-align: left;
+    }
+
+    .footer-container {
+        padding: 0 1em;
+    }
+
+    .footer-section {
+        margin: 0.5em 0;
+        min-width: 100%;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+
+    .footer-section p,
+    .footer-section ul li {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    .footer-logo img {
+        max-width: 70%;
+    }
+
+    .footer-detail {
+        display:block;
+    }
+    .hide-on-mobile {
+        display: none;
+      }
 }

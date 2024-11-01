@@ -15,6 +15,8 @@ import wait_pic from '../../../assets/wait-pic.png';
 import filtericon from '../../../assets/filtericon.png';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons'; 
+import developer from '../../../assets/developer.png';
+import automotive from '../../../assets/automotiveKK.png';
 
 const KelolaAnggota = () => {
   return (
@@ -83,7 +85,7 @@ const KelolaAnggota = () => {
 
                     <div className="daftar-kelompok-keahlian">
                         <div class="bg-white-kk">
-                        <img alt="Android Developer image"className='cover-daftar-kk' height="200" src="https://storage.googleapis.com/a1aa/image/9pX5u1jAxvKwBRmFzwijCnbEExNMvrVlQ9Ro9AxNpXEuLezJA.jpg" width="300"/>
+                        <img alt="Android Developer image"className='cover-daftar-kk' height="200" src={developer} width="300"/>
                         <h3 class="mt-4 text-xl font-bold text-blue-600">
                         Android Developer
                         </h3>
@@ -119,9 +121,9 @@ const KelolaAnggota = () => {
                     </div>
 
                     <div class="bg-white-kk">
-                        <img alt="Android Developer image"className='cover-daftar-kk' height="200" src="https://storage.googleapis.com/a1aa/image/9pX5u1jAxvKwBRmFzwijCnbEExNMvrVlQ9Ro9AxNpXEuLezJA.jpg" width="300"/>
+                        <img alt="Android Developer image"className='cover-daftar-kk' height="200" src={automotive} width="300"/>
                         <h3 class="mt-4 text-xl font-bold text-blue-600">
-                        Android Developer
+                        Otomotive
                         </h3>
                         <div className="pemilik">
                             <div className="prodi">
